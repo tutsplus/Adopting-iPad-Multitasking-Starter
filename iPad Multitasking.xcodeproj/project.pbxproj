@@ -12,6 +12,9 @@
 		609544F21BE59EDD00C773DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609544F01BE59EDD00C773DD /* Main.storyboard */; };
 		609544F41BE59EDD00C773DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609544F31BE59EDD00C773DD /* Assets.xcassets */; };
 		609544F71BE59EDD00C773DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609544F51BE59EDD00C773DD /* LaunchScreen.storyboard */; };
+		609544FF1BE5A5A300C773DD /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 609544FE1BE5A5A300C773DD /* Video.mp4 */; };
+		609C60F41BE5A6A000789AD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C60F31BE5A6A000789AD2 /* AVFoundation.framework */; };
+		609C60F61BE5A6A500789AD2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C60F51BE5A6A500789AD2 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		609544F31BE59EDD00C773DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		609544F61BE59EDD00C773DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		609544F81BE59EDD00C773DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609544FE1BE5A5A300C773DD /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video.mp4; sourceTree = "<group>"; };
+		609C60F31BE5A6A000789AD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		609C60F51BE5A6A500789AD2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609C60F61BE5A6A500789AD2 /* AVKit.framework in Frameworks */,
+				609C60F41BE5A6A000789AD2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +46,8 @@
 		609544E01BE59EDD00C773DD = {
 			isa = PBXGroup;
 			children = (
+				609C60F51BE5A6A500789AD2 /* AVKit.framework */,
+				609C60F31BE5A6A000789AD2 /* AVFoundation.framework */,
 				609544EB1BE59EDD00C773DD /* iPad Multitasking */,
 				609544EA1BE59EDD00C773DD /* Products */,
 			);
@@ -60,6 +70,7 @@
 				609544F31BE59EDD00C773DD /* Assets.xcassets */,
 				609544F51BE59EDD00C773DD /* LaunchScreen.storyboard */,
 				609544F81BE59EDD00C773DD /* Info.plist */,
+				609544FE1BE5A5A300C773DD /* Video.mp4 */,
 			);
 			path = "iPad Multitasking";
 			sourceTree = "<group>";
@@ -125,6 +136,7 @@
 				609544F71BE59EDD00C773DD /* LaunchScreen.storyboard in Resources */,
 				609544F41BE59EDD00C773DD /* Assets.xcassets in Resources */,
 				609544F21BE59EDD00C773DD /* Main.storyboard in Resources */,
+				609544FF1BE5A5A300C773DD /* Video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +298,7 @@
 				609544FD1BE59EDD00C773DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

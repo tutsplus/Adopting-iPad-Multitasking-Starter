@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewWidth: UILabel!
+    @IBOutlet weak var sizeClass: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destination = segue.destinationViewController as!
+        AVPlayerViewController
+        let url = NSBundle.mainBundle().URLForResource("Video", withExtension: "mp4")!
+        destination.player = AVPlayer(URL: url)
+        destination.player?.play()
+    }
 }
 
